@@ -1,5 +1,6 @@
 package com.rvmagrini.tutorial;
 
+import com.rvmagrini.mockandbeans.Car;
 import com.rvmagrini.mockandbeans.MockData;
 import com.rvmagrini.mockandbeans.Person;
 import com.rvmagrini.mockandbeans.PersonDTO;
@@ -24,6 +25,18 @@ public class MapAndReduce {
                 .collect(Collectors.toList());
 
         dtos.forEach(System.out::println);
+    }
+
+    @Test
+    public void mapToDoubleAndFindAverageCarPrice() throws IOException {
+        List<Car> cars = MockData.getCars();
+
+        double averageCarPrice = cars.stream()
+                .mapToDouble(Car::getPrice)
+                .average()
+                .orElse(0);
+
+        System.out.println(averageCarPrice);
     }
 
 }

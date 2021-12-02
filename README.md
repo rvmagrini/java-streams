@@ -23,4 +23,5 @@
 - [6.3] Working with allMatch() and anyMatch()
 
 ### 7: [TRANSFORMATIONS]
-- [7.1] 
+- [7.1] Transforming data types using map()
+- [7.2] Mapping to double and finding average
