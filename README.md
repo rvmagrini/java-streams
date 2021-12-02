@@ -33,3 +33,4 @@
 - [8.1] Working with count(), min() and max() without comparators
 - [8.2] Working with average() and sum()
 - [8.3] Working with summaryStatistics()
+- [8.4] Working with Collectors.groupingBy to group and count data
