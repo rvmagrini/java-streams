@@ -15,9 +15,12 @@
 - [4.1] Finding Min and Max number of a List
 
 ### 5: [REMOVING DUPLICATES]
-- [5.1] Using Distinct to remove duplicates and Collectors to create a Set
+- [5.1] Using distinct() to remove duplicates and Collectors.toSet() to create a Set
 
 ### 6: [FILTERING DATA]
 - [6.1] Working with filter(), takeWhile() and dropWhile()
 - [6.2] Working with findFirst() and findAny()
 - [6.3] Working with allMatch() and anyMatch()
+
+### 7: [TRANSFORMATIONS]
+- [7.1] 
