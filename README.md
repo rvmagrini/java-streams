@@ -17,3 +17,7 @@ TASKS:
 ### 4: [MIN AND MAX]
 TASKS:
 - [4.1] Finding Min and Max number of a List
+
+### 5: [DISTINCT]
+TASKS:
+- [5.1] Using Distinct to remove duplicates and Collectors to create a Set
