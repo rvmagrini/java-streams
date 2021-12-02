@@ -26,4 +26,5 @@
 - [7.1] Transforming data types using map()
 - [7.2] Mapping to double and finding average
 - [7.3] Working with reduce()
-- [7.4] Transforming data types using flatMap()
+- [7.4] Working with flatMap() to transform List of Lists
+- [7.5] Working with flatMap() to transform List of Optionals

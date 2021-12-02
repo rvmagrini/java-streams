@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class FlatMap {
@@ -43,6 +44,20 @@ public class FlatMap {
                 .collect(Collectors.toList());
 
         System.out.println(names);
+    }
+
+    @Test
+    public void flatMapWithOptionals() {
+        List<Optional<String>> optionals = List.of(
+                Optional.of("Java"),
+                Optional.of("Python"),
+                Optional.of("JavaScript")
+        );
+
+        List<String> programmingLanguages = optionals.stream()
+                .flatMap(Optional::stream)
+                .collect(Collectors.toList());
+        System.out.println(programmingLanguages);
     }
 
 }
