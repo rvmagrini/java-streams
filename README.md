@@ -26,3 +26,4 @@
 - [7.1] Transforming data types using map()
 - [7.2] Mapping to double and finding average
 - [7.3] Working with reduce()
+- [7.4] Transforming data types using flatMap()
