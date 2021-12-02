@@ -20,3 +20,4 @@
 ### 6: [FILTERING DATA]
 - [6.1] Working with filter(), takeWhile() and dropWhile()
 - [6.2] Working with findFirst() and findAny()
+- [6.3] Working with allMatch() and anyMatch()

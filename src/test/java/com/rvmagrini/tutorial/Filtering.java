@@ -76,4 +76,30 @@ public class Filtering {
         System.out.println(result);
     }
 
+    @Test
+    public void allMatch() {
+        int[] even = {2, 4, 6, 8, 10};
+        boolean isAllEven = Arrays.stream(even)
+                .allMatch(number -> number % 2 == 0);
+        System.out.println("Is all even: " + isAllEven);
+
+        int[] evenAndOdd = {2, 3, 4, 6, 7, 8, 10};
+        boolean isAllOdd = Arrays.stream(evenAndOdd)
+                .allMatch(number -> number % 2 != 0);
+        System.out.println("Is all odd: " + isAllOdd);
+    }
+
+    @Test
+    public void anyMatch() {
+        int[] even = {2, 4, 6, 8, 10};
+        boolean hasAnyEven = Arrays.stream(even)
+                .anyMatch(number -> number % 2 == 0);
+        System.out.println("Has any even: " + hasAnyEven);
+
+        int[] evenAndOdd = {2, 4, 6, 8, 10};
+        boolean hasAnyOdd = Arrays.stream(evenAndOdd)
+                .anyMatch(number -> number % 2 != 0);
+        System.out.println("Has any odd: " + hasAnyOdd);
+    }
+
 }
