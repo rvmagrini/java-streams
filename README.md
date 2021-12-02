@@ -8,7 +8,7 @@ TASKS:
 
 ### 2: [GETTING STARTED]
 TASKS:
-- [2.1] Test Imperative Approach and Declarative Approach using Streams
+- [2.1] Test Imperative Approach and Declarative Approach (using Streams)
 
 ### 3: [INT STREAM]
 TASKS:
@@ -18,6 +18,10 @@ TASKS:
 TASKS:
 - [4.1] Finding Min and Max number of a List
 
-### 5: [DISTINCT]
+### 5: [REMOVING DUPLICATES]
 TASKS:
 - [5.1] Using Distinct to remove duplicates and Collectors to create a Set
+
+### 6: [FILTERING DATA]
+TASKS:
+- [6.1] Working with filter(), takeWhile() and dropWhile()
