@@ -24,10 +24,11 @@
 
 ### 7: [TRANSFORMATIONS]
 - [7.1] Transforming data types using map()
-- [7.2] Mapping to double and finding average
+- [7.2] Mapping to Double and finding average
 - [7.3] Working with reduce()
 - [7.4] Working with flatMap() to transform List of Lists
 - [7.5] Working with flatMap() to transform List of Optionals
 
 ### 8: [STATISTICS WITH STREAMS]
 - [8.1] Working with count(), min() and max() without comparators
+- [8.2] Working with average() and sum()

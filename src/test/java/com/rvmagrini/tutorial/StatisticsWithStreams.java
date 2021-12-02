@@ -5,6 +5,7 @@ import com.rvmagrini.mockandbeans.MockData;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.List;
 
 public class StatisticsWithStreams {
@@ -43,6 +44,29 @@ public class StatisticsWithStreams {
                 .orElse(0);
 
         System.out.println(mostExpensiveCar);
+    }
+
+    @Test
+    public void average() throws IOException {
+        List<Car> cars = MockData.getCars();
+
+        double averageCarPrice = cars.stream()
+                .mapToDouble(Car::getPrice)
+                .average()
+                .orElse(0);
+
+        System.out.println(averageCarPrice);
+    }
+
+    @Test
+    public void sum() throws IOException {
+        List<Car> cars = MockData.getCars();
+
+        double sumCarPrices = cars.stream()
+                .mapToDouble(Car::getPrice)
+                .sum();
+
+        System.out.println(BigDecimal.valueOf(sumCarPrices));
     }
 
 }
