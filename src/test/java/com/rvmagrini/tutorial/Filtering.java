@@ -5,6 +5,7 @@ import com.rvmagrini.mockandbeans.MockData;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -35,6 +36,7 @@ public class Filtering {
         Stream.of(2, 4, 6, 8, 9, 10, 12)
                 .takeWhile(number -> number % 2 == 0)
                 .forEach(number -> System.out.print(number + " "));
+        System.out.println();
     }
 
     @Test
@@ -49,6 +51,29 @@ public class Filtering {
         Stream.of(2, 4, 6, 8, 9, 10, 12)
                 .dropWhile(number -> number % 2 == 0)
                 .forEach(number -> System.out.print(number + " "));
+        System.out.println();
+    }
+
+    @Test
+    public void findFirst() {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int result = Arrays.stream(numbers)
+                .filter(number -> number == 50)
+                .findFirst()
+                .orElse(-1);
+
+        System.out.println(result);
+    }
+
+    @Test
+    public void findAny() {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int result = Arrays.stream(numbers)
+                .filter(number -> number == 6)
+                .findAny()
+                .orElse(-1);
+
+        System.out.println(result);
     }
 
 }
