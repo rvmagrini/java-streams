@@ -28,3 +28,6 @@
 - [7.3] Working with reduce()
 - [7.4] Working with flatMap() to transform List of Lists
 - [7.5] Working with flatMap() to transform List of Optionals
+
+### 8: [STATISTICS WITH STREAMS]
+- [8.1] Working with count(), min() and max() without comparators
