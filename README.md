@@ -9,3 +9,7 @@ TASKS:
 ### 2: [GETTING STARTED]
 TASKS:
 - [2.1] Test Imperative Approach and Declarative Approach using Streams
+
+### 3: [INT STREAM]
+TASKS:
+- [3.1] Using IntStream to print a Range of numbers (exclusive and inclusive), Iterate Lists and Create a specific Iteration
