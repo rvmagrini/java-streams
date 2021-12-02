@@ -13,3 +13,7 @@ TASKS:
 ### 3: [INT STREAM]
 TASKS:
 - [3.1] Using IntStream to print a Range of numbers (exclusive and inclusive), Iterate Lists and Create a specific Iteration
+
+### 4: [MIN AND MAX]
+TASKS:
+- [4.1] Finding Min and Max number of a List
