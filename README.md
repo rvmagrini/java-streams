@@ -39,3 +39,6 @@
 - [9.1] Working with map() and sorted() to sort Elements (natural order and reverse)
 - [9.2] Working with sorted() to sort Objects (natural order and reverse) without mapping
 - [9.3] Sort top ten most expensive blue cars of a List of Objects
+
+### 10: [JOINING STRINGS]
+- [10.1] Joining List of strings with and without Streams
