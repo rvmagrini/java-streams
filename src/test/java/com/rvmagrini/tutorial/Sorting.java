@@ -1,5 +1,6 @@
 package com.rvmagrini.tutorial;
 
+import com.rvmagrini.mockandbeans.Car;
 import com.rvmagrini.mockandbeans.MockData;
 import com.rvmagrini.mockandbeans.Person;
 import org.junit.jupiter.api.Test;
@@ -55,6 +56,19 @@ public class Sorting {
         peopleSortedReversed.forEach(System.out::println);
     }
 
+    @Test
+    public void topTenMostExpensiveBlueCars() throws IOException {
+        List<Car> cars = MockData.getCars();
+
+        List<String> topTenMostExpBlueCars = cars.stream()
+                .filter(car -> car.getColor().equalsIgnoreCase("blue"))
+                .sorted(Comparator.comparing(Car::getPrice).reversed())
+                .limit(10)
+                .map(car -> car.getColor() + " " + car.getMake() + " (" + car.getModel() + "): " + car.getPrice())
+                .collect(Collectors.toList());
+
+        topTenMostExpBlueCars.forEach(System.out::println);
+    }
 
 
 }
