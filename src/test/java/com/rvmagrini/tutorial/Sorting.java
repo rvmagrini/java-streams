@@ -35,6 +35,26 @@ public class Sorting {
         System.out.println(peopleSortedReversed);
     }
 
+    @Test
+    public void sortingStreamOfObjects() throws IOException {
+        List<Person> people = MockData.getPeople();
+
+        List<Person> peopleSorted = people.stream()
+                .sorted(Comparator.comparing(Person::getFirstName))
+                .collect(Collectors.toList());
+        peopleSorted.forEach(System.out::println);
+    }
+
+    @Test
+    public void sortingStreamOfObjectsReverse() throws IOException {
+        List<Person> people = MockData.getPeople();
+
+        List<Person> peopleSortedReversed = people.stream()
+                .sorted(Comparator.comparing(Person::getFirstName).reversed())
+                .collect(Collectors.toList());
+        peopleSortedReversed.forEach(System.out::println);
+    }
+
 
 
 }

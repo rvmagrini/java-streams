@@ -37,3 +37,4 @@
 
 ### 9: [SORTING]
 - [9.1] Working with map() and sorted() to sort elements (natural and reverse)
+- [9.2] Working with sorted() to sort objects (natural and reverse) without mapping
