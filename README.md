@@ -34,3 +34,6 @@
 - [8.2] Working with average() and sum()
 - [8.3] Working with summaryStatistics()
 - [8.4] Working with Collectors.groupingBy to group and count data
+
+### 9: [SORTING]
+- [9.1] Working with map() and sorted() to sort elements (natural and reverse)
